@@ -1,0 +1,115 @@
+:root {
+    --custom-border: 1px solid #4691f1;
+  }
+  
+.__font{
+    color: #4691f1 !important; 
+    font-style: normal !important;
+}
+.__font2{
+    font-style: normal !important;
+}
+.__border-rg-bt{
+    border-right: var(--custom-border) !important;
+    border-bottom: var(--custom-border) !important;
+}
+.__border-bt{
+    border-bottom: var(--custom-border) !important;
+}
+.__border-rg{
+    border-right: var(--custom-border) !important;
+}
+
+.btn-main-md:hover {
+    background: #4691f1;
+}
+
+.main-nav .navbar-nav .nav-item a{
+    text-decoration: none !important;
+    color: #333; /* Default text color */
+    position: relative; /* Position relative for pseudo-element */
+    transition: color 0.3s, border-bottom 0.3s; 
+
+}
+.main-nav .navbar-nav .nav-item a::before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 3px; /* Underline thickness */
+    bottom: 0;
+    left: 0;
+    background-color: transparent; /* Initial color of the underline */
+    transition: background-color 0.5s, font-weight 0.5s; /* Smooth background color transition */
+  
+
+}
+.main-nav .navbar-nav .nav-item a:hover{
+ color: #080272;
+ font-weight: bolder;
+
+}
+.main-nav .navbar-nav .nav-item a:hover::before{
+ background-color:  #080272;
+
+
+}
+
+.about .image-block img {
+    border-radius: 50px;
+}
+.registration .registration-block {
+    padding: 50px 10%;
+}
+.lobster{
+    font-size: 8rem !important; 
+    font-family: 'Lobster', cursive !important;
+     color:white !important;
+}
+
+.no-gutters{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.qr-link{
+    margin-top: 10px;
+    text-decoration-color: white; text-decoration: underline;
+    color:white;
+    cursor: pointer;
+}
+.qr-link p{
+    color:white !important;
+}
+.qr-link:hover{
+    background: #4691f1;
+    border-color:#4691f1 ;
+}
+.qr-link:active{
+    border-color:#4691f1 ;
+    color: white !important ; 
+}
+
+.extra{
+    padding-top: 10px;
+}
+
+@media (max-width: 542px) {
+    .block{
+        padding-top: 1rem !important;
+    }
+   .lobster{
+    padding-top: 1rem !important;
+    font-size: 6rem !important;
+   } 
+   .logo-h1{
+    padding-top: 1rem !important;
+    font-size: 3rem !important;
+   }
+   .logo-h2{
+    font-size: 1.5rem !important;
+    /* padding-top:1rem; */
+    padding-bottom: 1rem !important;
+   }
+   
+   
+}
