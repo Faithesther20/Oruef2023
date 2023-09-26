@@ -1063,7 +1063,8 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 767px) {
   .about .content-block {
-    text-align: center;
+    text-align: justify;
+   
   }
 }
 
@@ -1081,6 +1082,9 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 @media (max-width: 767px) {
+  .about .content-block h2{
+    text-align: center;
+  }
   .about .content-block h2:after {
     margin: auto;
   }
@@ -2495,6 +2499,9 @@ select.form-control:not([size]):not([multiple]) {
 
 .speakers-full-width .speaker-slider .speaker-image img {
   width: 100%;
+  height: 25rem;
+  object-fit: contain;
+  /* padding-right: 1rem; */
 }
 
 .speakers-full-width .speaker-slider .speaker-image .primary-overlay {

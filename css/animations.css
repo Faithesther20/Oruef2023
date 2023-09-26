@@ -1,0 +1,51 @@
+/* Define the initial state of the slide-in animation */
+.slide-in {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Define the animation when the section is visible */
+.slide-in.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Initial state */
+.zoom-in {
+    transform: scale(0);
+}
+
+/* Animation */
+.zoom-in.active {
+    transform: scale(1);
+    transition: transform 1s linear;
+}
+
+.slide-up {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+/* Animation */
+.slide-up.active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 1.3s ease-in-out, opacity 1.3s ease-in-out;
+}
+
+/* Initial state for desktop */
+.animated-section .img-col,
+.animated-section .content-col {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+/* Animation for desktop */
+.animated-section.in-view .img-col,
+.animated-section.in-view .content-col {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+}
+

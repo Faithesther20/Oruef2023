@@ -23,9 +23,12 @@
   <!-- Slick Carousel -->
   <link href="plugins/slick/slick.css" rel="stylesheet">
   <link href="plugins/slick/slick-theme.css" rel="stylesheet">
+<link  href="plugins/aos/aos.css" rel="stylesheet">
+
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style2.css" rel="stylesheet">
+  <link href="css/animations.css" rel="stylesheet">
 
   <!-- FAVICON -->																																																																						
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon//apple-touch-icon.png">
@@ -38,7 +41,7 @@
     .qr-code {
         text-align: center;
         margin-bottom: 10px;
-		padding: 10;
+		/* padding: 10 ; */
     }
 
     .qr-code img {
@@ -119,8 +122,8 @@
 =            Banner            =
 =============================-->
 
-<section id="home" class="banner bg-banner-one overlay">
-	<div class="container">
+<section id="home" class="banner bg-banner-one overlay" data-aos="fade-down" data-aos-duration="1000">
+	<div class="container ">
 		<div class="row">
 			<div class="col-lg-12">
 				<!-- Content Block -->
@@ -147,33 +150,42 @@
 =            About            =
 ============================-->
 
-<section class="section about">
+<section class="section about" >
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4 col-md-6 align-self-center">
+			<div class="col-lg-4 col-md-6 align-self-center img-col" data-aos="fade-in" data-aos-duration="1000" >
 				<div class="image-block bg-about">
 					<img class="img-fluid" src="images/gallery/img9.jpg" alt="">
 				</div>
 			</div>
-			<div class="col-lg-8 col-md-6 align-self-center">
+			<div class="col-lg-8 col-md-6 align-self-center content-col" data-aos="fade-in" data-aos-duration="1000">
 				<div class="content-block">
-					<h2><span style="color:rgb(92, 91, 91)">Theme: </span>Educating for Eternity:<span class="alternate __font2" >Running with the<span style="font-weight: bolder;"> Vision</span></span></h2>
-					<div class="description-one">
-						<p>
-							Word of faith Group of schools was established in pursuit of the vision from our mother and Proprietress Archbishop (Dr.) M.E. Benson Idahosa to create academic enviroment where children are brought up with optimal Christian ideals.
-							This confrence is a bold attempt to train educators, to enable them train up children in the way they should go. So that when they are old they would not depart from it.   
-						</p>
-						<p class="extra">Our theme educating for eternity: running with the vision seeks to train educators to inculcate in every child an excellent spirit, and 
-							right type of values, which aspires to make every child God fearing and academically outstanding.
-						</p>
-					</div>
-					<div class="description-two">
-						<p>
-							Everything must perish where God's word is not studied increasingly... for if the scriptures and learning perish, what will remain
-						</p>
+					<h2>
+						<span class="__theme-font">Theme:</span>
+						<span class="__md-font">Educating for Eternity:</span>
+						<span class="alternate __font2 __md-font" >Running with the
+							<span style="font-weight: bolder;"> Vision</span>
+						</span>
+					</h2>
+					<div data-aos="fade-left" data-aos-duration="1000">
+						<div class="description-one">
+							<p>
+								Word of faith Group of schools was established in pursuit of the vision from our mother and Proprietress Archbishop (Dr.) M.E. Benson Idahosa to create academic enviroment where children are brought up with optimal Christian ideals.
+								This confrence is a bold attempt to train educators, to enable them train up children in the way they should go. So that when they are old they would not depart from it.   
+							</p>
+							<p class="extra">Our theme educating for eternity: running with the vision seeks to train educators to inculcate in every child an excellent spirit, and 
+								right type of values, which aspires to make every child God fearing and academically outstanding.
+							</p>
+						</div>
+						<div class="description-two">
+							<p class="extra">
+								Everything must perish where God's word is not studied increasingly... for if the scriptures and learning perish, what will remain
+							</p>
+						</div> 
 					</div>
 					
-					<ul class="list-inline">
+					
+					<ul class="list-inline" data-aos="fade-down" data-aos-duration="1000">
 						<li class="list-inline-item">
 							<a href="#schedule" class="btn btn-main-md">Speakers</a>
 						</li>
@@ -189,115 +201,89 @@
 
 <!--====  End of About  ====-->
 
-<!--==============================
-=            Speakers            =
-===============================-->
-
-<section id="speakers" class="section speakers bg-speaker overlay-lighter">
-	<div class="container">
+<section id="speakers" class="speakers-full-width speaker bg-speaker overlay-light" >
+	<div class="container-fluid p-15  unique">
 		<div class="row">
 			<div class="col-12">
 				<!-- Section Title -->
-				<div class="section-title white">
+				<div class="section-title white" data-aos="fade-in" data-aos-duration="1000">
 					<h3>Resource <span class="alternate __font" >Persons</span></h3>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-6">
-				<!-- Speaker 1 -->
-				<div class="speaker-item">
-					<div class="image">
-						<img src="images/gallery/arch bishop.jfif" alt="speaker" class="img-fluid">
-						
-					</div>
-					<div class="content text-center">
-						<h5><a href="single-speaker.html">Arch Bishop Margaret Benson Idahosa</a></h5>
-						<p>Proprietress , Word of Faith Schools</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6">
-				<!-- Speaker 2 -->
-				<div class="speaker-item">
-					<div class="image">
-						<img src="images/speakers/sp1 (2).jpeg" alt="speaker" class="img-fluid">
-						
-					</div>
-					<div class="content text-center">
-						<h5><a href="single-speaker.html">Bishop FEB Idahosa</a></h5>
-						<p> Head of Cabinet,Church of God Mission International</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6">
-				<!-- Speaker 3 -->
-				<div class="speaker-item">
-					<div class="image">
+		<div class="row" data-aos="fade-up" data-aos-duration="1000">
+			<div class="col-12">
+				<!-- Speaker Slider -->
+				<div class="speaker-slider">
+					<div class="speaker-image">
 						<img src="images/speakers/sp1 (1).jpeg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay text-center">
+							<h5>Minister Daisy Idahosa</h5>
+							<p>Administrator General, Word of Faith Schools, Host.</p>
 						
+						</div>
 					</div>
-					<div class="content text-center">
-						<h5><a href="single-speaker.html">Minister Daisy Idahosa</a></h5>
-						<p>Administrator General, Word of Faith Schools, Host.</p>
+					<div class="speaker-image">
+						<img src="images/speakers/sp1 (2).jpeg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay text-center">
+							<h5>Bishop FEB Idahosa</h5>
+							<p>Head of Cabinet,Church of God Mission International</p>
+							
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6">
-				<!-- Speaker 3 -->
-				<div class="speaker-item">
-					<div class="image">
-						<img src="images/speakers/sp4.jpeg" alt="speaker" class="img-fluid">
-						
-					</div>
-					<div class="content text-center">
-						<h5><a href="single-speaker.html">Christopher David Belyeu</a></h5>
-						<p>Executive Director ORUEF / ICAA.  </p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6">
-				<!-- Speaker 3 -->
-				<div class="speaker-item">
-					<div class="image">
-						<img src="images/gallery/imoh.jfif" alt="speaker" class="img-fluid">
-						
-					</div>
-					<div class="content text-center">
-						<h5><a href="single-speaker.html">Imoh Okundaye</a></h5>
-						<p>M.D Jeremy Vine</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6">
-				<!-- Speaker 3 -->
-				<div class="speaker-item">
-					<div class="image">
-						<img src="images/speakers/sp3.jpeg" alt="speaker" class="img-fluid">
-						
-					</div>
-					<div class="content text-center">
-						<h5><a href="single-speaker.html">Thomas M. Walsh</a></h5>
-						<p>ORUEF/ICAA</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6">
-				<!-- Speaker 3 -->
-				<div class="speaker-item">
-					<div class="image">
+					
+					<div class="speaker-image">
 						<img src="images/speakers/sp2.jpeg" alt="speaker" class="img-fluid">
-						
+						<div class="primary-overlay text-center">
+							<h5>Robert  Akers</h5>
+							<p>ORUEF/ICAA</p>
+							
+						</div>
 					</div>
-					<div class="content text-center">
-						<h5><a href="single-speaker.html">Robert  Akers</a></h5>
-						<p>ORUEF/ICAA</p>
+					<div class="speaker-image">
+						<img src="images/speakers/sp3.jpeg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay text-center">
+							<h5>Thomas M. Walsh</h5>
+							<p>ORUEF/ICAA</p>
+							
+						</div>
 					</div>
+					<div class="speaker-image">
+						<img src="images/speakers/sp4.jpeg" alt="speaker" class="img-fluid">
+						<div class="primary-overlay text-center">
+							<h5>Christopher David Belyeu</h5>
+							<p>Executive Director ORUEF / ICAA.</p>
+							
+						</div>
+					</div>
+					<div class="speaker-image">
+						<img src="images/gallery/arch bishop.jfif" alt="speaker" class="img-fluid">
+						<div class="primary-overlay text-center">
+							<h5>Arch Bishop Margaret Benson Idahosa</h5>
+							<p>Proprietress , Word of Faith Schools</p>
+							
+						</div>
+					</div>
+					<div class="speaker-image">
+						<img src="images/gallery/imoh.jfif" alt="speaker" class="img-fluid">
+						<div class="primary-overlay text-center">
+							<h5>Imoh Okundaye</h5>
+							<p>M.D Jeremy Vine</p>
+							
+						</div>
+					</div>
+				
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
+<!--==============================
+=            Speakers            =
+===============================-->
+
+
 
 <!--====  End of Speakers  ====-->
 
@@ -309,12 +295,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<div class="section-title">
+				<div class="section-title" data-aos="fade-in" data-aos-duration="1000">
 					<h3>Event <span class="alternate __font2">Schedule</span></h3>
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" data-aos="fade-up" data-aos-duration="1000">
 			<div class="col-12">
 				<div class="schedule-tab">
 					<ul class="nav nav-pills text-center">
@@ -803,9 +789,9 @@
 <section id="resources" class="registration">
 	<div class="container-fuild p-0">
 		<div class="row">
-			<div class="col-lg-6 col-md-12 p-0">
+			<div class="col-lg-6 col-md-12 p-0" >
 				<div class="service-block bg-service overlay-primary text-center">
-					<div class="row no-gutters">
+					<div class="row no-gutters"  data-aos="fade-right" data-aos-duration="1000">
 						<div class="col-6 __border-rg-bt">
 							<!-- Service item -->
 							<div class="service-item">
@@ -840,12 +826,12 @@
 			<div class="col-lg-6 col-md-12 p-0">
 				<div class="registration-block bg-registration overlay-dark">
 					<div class="block">
-						<div class="title text-left">
-							<h3>Programme<span class="alternate __font"> Resources</span></h3>
+						<div class="title text-left" data-aos="fade-left" data-aos-duration="1000">
+							<h3 >Programme<span class="alternate __font"> Resources</span></h3>
 							<p style="color: white;">Scan  or click the Link to download confrence resources</p>
 						</div>
 						<!-- Replace the form with two QR code images -->
-						<div class="row">
+						<div class="row"  data-aos="fade-up" data-aos-duration="1000">
                             <div class="col-md-6">
                                 <div class="qr-code">
 									<p style="color: white;">Programme pdf</p>
@@ -886,13 +872,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<div class="section-title">
+				<div class="section-title" data-aos="fade-in" data-aos-duration="1000">
 					<h3>Sponsors</span></h3>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12">
+			<div class="col-12" data-aos="fade-up" data-aos-duration="1000">
 				<!-- Title -->
 				
 				<!-- Title -->
@@ -944,15 +930,21 @@
 		<div class="row">
 			<div class="col-md-8">
 				<!-- Get ticket info -->
-				<div class="content-block">
-					<h2>Our Vision</h2>
-					<p>Building the nations with leading academic programmes that lay a strong christian foundation 
-						to develop both the spirit and the mind.
-					</p>
-					<h2>Our Mission</h2>
-					<p>We are committed to the christian mission of promoting the completed development of the whole
-						child in Christ spiritually, mentally, physically and socially.
-					</p>
+				<div class="content-block" data-aos="fade-up" data-aos-duration="1000">
+					<div data-aos="fade-right" data-aos-duration="1000">
+						<h2>Our Vision</h2>
+						<p>Building the nations with leading academic programmes that lay a strong christian foundation 
+							to develop both the spirit and the mind.
+						</p>
+					</div>
+
+					<div data-aos="fade-left" data-aos-duration="1000">
+						<h2>Our Mission</h2>
+						<p>We are committed to the christian mission of promoting the completed development of the whole
+							child in Christ spiritually, mentally, physically and socially.
+						</p>
+					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -978,15 +970,14 @@
 	<div class="container-fluid p-0">
 		<div class="row">
 			<div class="col-12">
-				<div class="section-title">
+				<div class="section-title" data-aos="fade-in" data-aos-duration="1000">
 					<h3>Past <span class="alternate __font2">Events</span> Gallery</h3>
-					<p>The vision did not just start today</p>
 				</div>
 			</div>
 		</div>
-		<div class="row no-gutters">
+		<div class="row no-gutters" data-aos="fade-up" data-aos-duration="1500">
 			<!-- Gallery Image -->
-			<div class="col-lg-3 col-md-4">
+			<div class="col-lg-3 col-md-4" >
 				<div class="image">
 					<img src="images/gallery/g1.jpeg" alt="gallery-image" class="img-fluid">
 					<div class="primary-overlay">
@@ -1103,7 +1094,7 @@
 =            Call to Action Subscribe            =
 ===============================================-->
 
-<section class="cta-subscribe bg-subscribe overlay-dark">
+<section class="cta-subscribe bg-subscribe overlay-dark" data-aos="fade-in" data-aos-duration="1000">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 mr-auto">
@@ -1128,7 +1119,10 @@
 <section class="map">
 	<!-- Google Map -->
 	
-	<iframe id="map" style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63451.17483583174!2d5.570838657835514!3d6.303297298231846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x1040d3cfd64479bb%3A0x4b160677b5291221!2s1%20FAITH%20Way%2C%20Oka%20300102%2C%20Benin%20City%2C%20Edo!3m2!1d6.303213599999999!2d5.6120388!5e0!3m2!1sen!2sng!4v1695210105314!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	<div class="address-block">
+	<iframe id="map" style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63451.17483583174!2d5.570838657835514!3d6.303297298231846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x1040d3cfd64479bb%3A0x4b160677b5291221!2s1%20FAITH%20Way%2C%20Oka%20300102%2C%20Benin%20City%2C%20Edo!3m2!1d6.303213599999999!2d5.6120388!5e0!3m2!1sen!2sng!4v1695210105314!5m2!1sen!2sng"
+	 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="fade-down" data-aos-duration="1000"  >
+	</iframe>	
+	<div class="address-block" data-aos="fade-up" data-aos-duration="1000">
 		<h4>Oruef Confrence</h4>
 		<ul class="address-list p-0 m-0">
 			<li><i class="fa fa-home"></i><span>No 1 Faith Way, Off Upper Adesuwa, GRA, 300251, <br>Benin City, Nigeria.</span></li>
@@ -1147,13 +1141,13 @@
 
 <footer class="footer-main">
     <div class="container">
-      <div class="row">
+      <div class="row" data-aos="fade-up" data-aos-duration="1000">
         <div class="col-md-12">
           <div class="block text-center">
-            <div class="footer-logo">
+            <div class="footer-logo" >
               <img src="images/footer-logo1.png" alt="logo" class="img-fluid">
             </div>
-            <ul class="social-links-footer list-inline">
+            <ul class="social-links-footer list-inline" data-aos="fade-up" data-aos-duration="1000">
              
               <li class="list-inline-item">
                 <a href="https://www.instagram.com/oruefconfrence2022/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><i class="fa fa-instagram"></i></a>
@@ -1167,12 +1161,12 @@
     </div>
 </footer>
 <!-- Subfooter -->
-<footer class="subfooter">
+<footer class="subfooter" data-aos="fade-in" data-aos-duration="1000">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 align-self-center">
+      <div class="col-md-6 align-self-center" >
         <div class="copyright-text">
-          <p><a class="__font" href="https://www.linkedin.com/in/esther-iyege-7ba798238">Digisoft I.T</a> &#169; 2023 All Right Reserved</p>
+          <p><a class="__font" href="https://www.bing.com/ck/a?!&&p=c237a387b94dced4JmltdHM9MTY5NTYwMDAwMCZpZ3VpZD0xNjAwYmJjOS0yM2RhLTZkZTctMjc5Ni1hOGMwMjJjNzZjMGEmaW5zaWQ9NTE4NA&ptn=3&hsh=3&fclid=1600bbc9-23da-6de7-2796-a8c022c76c0a&psq=digisoft+i.t+facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3Blb3BsZS9EaWdpc29mdC1JVC8xMDAwODY2MDE3MDIwMjIv&ntb=1" target="_blank">Digisoft I.T</a> &#169; 2023 All Right Reserved</p>
         </div>
       </div>
       <div class="col-md-6">
@@ -1206,7 +1200,12 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
   <script type="text/javascript" src="plugins/google-map/gmap.js"></script>
   <!-- Custom Script -->
+  <script src="plugins/aos/aos.js"></script>
   <script src="js/custom.js"></script>
+
+  <script>
+     AOS.init();
+  </script>
 </body>
 
 </html>
