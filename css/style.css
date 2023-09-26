@@ -2500,8 +2500,9 @@ select.form-control:not([size]):not([multiple]) {
 .speakers-full-width .speaker-slider .speaker-image img {
   width: 100%;
   height: 25rem;
-  object-fit: contain;
-  /* padding-right: 1rem; */
+  border-radius: 2rem;
+  object-fit:contain;
+ 
 }
 
 .speakers-full-width .speaker-slider .speaker-image .primary-overlay {
@@ -2510,9 +2511,11 @@ select.form-control:not([size]):not([multiple]) {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #080272;
+  border-radius:20px;
+  background: #080272da;
   opacity: .85;
   transition: .3s ease;
+  border: 3px solid #080272;
 }
 
 .speakers-full-width .speaker-slider .speaker-image .primary-overlay h5, .speakers-full-width .speaker-slider .speaker-image .primary-overlay p, .speakers-full-width .speaker-slider .speaker-image .primary-overlay i {
