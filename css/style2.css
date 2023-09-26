@@ -20,6 +20,9 @@
     border-right: var(--custom-border) !important;
 }
 
+.__md-font:nth-child(1){
+    display: block;
+}
 .btn-main-md:hover {
     background: #4691f1;
 }
@@ -96,11 +99,12 @@
 .extra{
     padding-top: 2rem;
 }
+
 .__theme-font{
     color:rgb(92, 91, 91)!important; 
     font-size: smaller!important;
+    display: block !important;
 }
-
 
 .speakers-full-width .speaker-slider .slick-prev, .speakers-full-width .speaker-slider .slick-next {
     border-radius: 5px;
@@ -111,7 +115,9 @@
 }
 
 
-
+.__md-font{
+    display: block;
+}
 @media (max-width:1025px) {
 
 .speakers-full-width .speaker-slider .speaker-image img {
